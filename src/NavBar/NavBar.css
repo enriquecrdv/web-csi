@@ -1,0 +1,72 @@
+/* src/NavBar/NavBar.css */
+.navbar {
+  background-color: #643c9c;
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center;
+  height: 80px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 25px;
+}
+
+.navbar a {
+  height: 100%; /* Ocupa toda la altura del contenedor .navbar */
+  display: flex;
+  align-items: center;
+}
+
+.navbar a img {
+  height: 60px; /* Establece la altura del logo */
+  width: auto; /* Permite que el ancho se ajuste proporcionalmente a la altura */
+}
+
+/* En tu archivo CSS global (por ejemplo, App.css) */
+body {
+  background-color: #ddd3e9;
+  /* Otros estilos para el cuerpo de tu página */
+}
+
+/* src/NavBar/NavBar.css */
+
+/* Estilos para el menú hamburguesa */
+.menu-toggle {
+  display: none; /* Inicialmente oculto en pantallas grandes */
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+/* Estilos para el menú desplegable */
+.navbar.active {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navbar.active .menu-toggle {
+  display: block; /* Mostrar el botón de hamburguesa */
+}
+
+.navbar.active a {
+  display: block; /* Mostrar los enlaces como bloques en el menú desplegable */
+}
+
+
+
+
+
+
+
+
+
+
+
+
